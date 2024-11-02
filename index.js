@@ -1,14 +1,17 @@
 import express from 'express'
-import { router } from './Routes/userRoutes.js';
+import { route } from './Routes/userRoutes.js';
 
 const APP= express();
 const puerto= 3000;
 
 // set up PUG (set)
+APP.set('view engine', 'pug')
+// views file location 
+APP.set('views','./View')
 
 
-// direction  ruote
-APP.use('/',router)
+// direction  ruote (use)
+APP.use('/auth',route)
 
 // escuchar 
 APP.listen(puerto,()=>{
