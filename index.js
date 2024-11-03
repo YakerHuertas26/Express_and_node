@@ -4,7 +4,7 @@ import { route } from './Routes/userRoutes.js';
 const APP= express();
 const puerto= 3000;
 
-// set up PUG (set)
+// setting PUG (set)
 APP.set('view engine', 'pug')
 // views file location 
 APP.set('views','./View')

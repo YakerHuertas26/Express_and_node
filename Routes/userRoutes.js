@@ -1,4 +1,5 @@
 import express from 'express';
+import { formularioLogin, formularioRegistro } from '../Controllers/UsuarioController.js';
 
 const route= express.Router();
 
@@ -21,8 +22,7 @@ const route= express.Router();
 //     })
 
     // render shows a view
-    route.get('/login',(req,res)=>{
-        res.render('Auth/login')
-        }) 
+    route.get('/login', formularioLogin);
+    route.get('/registro',formularioRegistro)
 
 export {route};
