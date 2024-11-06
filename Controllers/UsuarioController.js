@@ -1,7 +1,7 @@
 const formularioLogin= (req,res)=>{
     res.render('Auth/login'),{
         // paso los valores
-        autenticado:true
+        // autenticado:true
     }
 }
 

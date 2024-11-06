@@ -9,9 +9,11 @@ APP.set('view engine', 'pug')
 // views file location 
 APP.set('views','./View')
 
-
 // direction  ruote (use)
 APP.use('/auth',route)
+
+// carpetas públicas 
+APP.use(express.static('Public'))
 
 // escuchar 
 APP.listen(puerto,()=>{

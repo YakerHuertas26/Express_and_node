@@ -8,11 +8,16 @@
   "main": "index.js",
   "type": "module",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "autoprefixer": "^10.4.20",
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.14"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "css":"postcss Public/Css/tailwind.css -o Public/Css/App.css --watch"
   },
   "keywords": [],
   "author": "",
